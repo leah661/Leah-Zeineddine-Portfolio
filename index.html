@@ -1,0 +1,463 @@
+<!doctype html>
+<!-- INFO1005 Website Design — Module 3.1 completed Maggie Simpson example -->
+<html lang="en" data-bs-theme="light">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maggie Simpson responsive creative portfolio demonstration">
+  <meta name="author" content="INFO1005 Website Design">
+  <title> Leah Zeineddine | Creative Portfolio</title>
+
+  <!-- FAVICON — already supplied. Later replace these with your own favicon files. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif+Caption:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS comes last so it can style Bootstrap components. -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top" aria-label="Maggie Simpson home">
+      <img src="img/Leah Zeineddine-.png" alt="Maggie Simpson icon" class="brand-icon rounded-circle">
+      <span class="d-none d-sm-inline"> Leah Zeineddine </span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#process">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="pdf/Leah_Zeineddine_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+
+      
+      <div class="form-check form-switch theme-switch">
+        <input class="form-check-input" type="checkbox" role="switch"
+               id="themeSwitch" aria-label="Toggle dark mode">
+        <label class="form-check-label" for="themeSwitch">Dark</label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  
+  <header class="container hero-section">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-7">
+        <p class="eyebrow">Social Science · Criminal Justice · Community Support</p>
+        <h1>Leah Zeineddine</h1>
+        <p class="lead-copy">I am a social sciences student interested in criminal justice, understanding the legal system and supporting individuals and communities.</p>
+        <p class="d-none d-md-block">Through my studies, I am developing my knowledge of the justice system, communication skills and the importance of supporting diverse communities.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-brand" href="#portfolio">View portfolio</a>
+          <a class="btn btn-ghost" href="pdf/Leah_Zeineddine_Resume.pdf" target="_blank">Open resume</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 text-center">
+        <img src="img/Leah Zeineddine-.png" class="img-scree" alt="Leah Zeineddine's professional portfolio portrait.">
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT — cards are review from Module 2.2 / 2.3 -->
+  <section class="container section-block" id="aboutme">
+    <div class="section-intro">
+      <p class="eyebrow">Profile snapshot</p>
+      <h2>About Leah</h2>
+      <p>These cards demonstrate how portfolio information can reorganise across screen sizes.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/leah-profile.jpg" class="card-img-top" alt="Maggie Simpson portfolio about image">
+          <div class="card-body">
+            <h3 class="card-title">Introducing Me</h3>
+            <p class="card-text">Leah is a social science student with a strong interested in criminal and community justice. She is passionate about understanding the legal system, supporting individuals and exploring future opportunities in courts and legal services. <span class="standout"></span></p>
+            <p class="card-text d-none d-lg-block">This extra paragraph is intentionally hidden on smaller screens.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/IMG_3329.JPG" class="card-img-top" alt="Education portfolio image">
+          <div class="card-body">
+            <h3 class="card-title">Education</h3>
+            <p class="card-text">Pathway student developing skills in responsive web design, creative process and visual communication.</p>
+            <ul>
+              <li>Responsive website design</li>
+              <li>Image preparation</li>
+              <li>Portfolio planning</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 feature-card">
+          <img src="img/IMG_3330.JPG" class="card-img-top" alt="Creative skills portfolio image">
+          <div class="card-body">
+            <h3 class="card-title">Skills</h3>
+            <p class="card-text">Leah combines design thinking, front-end production and portfolio presentation.</p>
+            <div class="skill-meter"><span style="width:88%">Visual design 88%</span></div>
+            <div class="skill-meter"><span style="width:76%">Web design 76%</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container section-block" id="portfolio">
+    <div class="section-intro">
+      <p class="eyebrow">Portfolio presentation</p>
+      <h2>Responsive lightbox gallery</h2>
+      <p>One Bootstrap modal can display different project images and descriptions.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/Screenshot 2026-11-06 at 8.46.51 PM.png" class="card-img-top" alt="Personal website design project.">
+          <div class="card-body">
+            <h3 class="card-title">Website Design Project</h3>
+            <p class="card-text"> A personal portfolio website created using HTML, CSS and Bootstrap to showcase my background, education, skills and experience.</p>.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/IMG_3330.JPG"
+                    data-project-title="Website Design Project"
+                    data-project-description="A character-led illustration series designed to show consistent visual style and story direction.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/IMG_3329.JPG" class="card-img-top" alt="Photography project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Education and Learning</h3>
+            <p class="card-text">My studies at Western Sydney University are helping me develop knowledge of social sciences, criminal justice and community support.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/IMG_3329.JPG"
+                    data-project-title="Photography Study"
+                    data-project-description="A photography study using image selection and sequencing to create a visual story.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="img/markus-winkler-pOu_UmkOG-0-unsplash.jpg" class="card-img-top" alt="Magazine layout project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Customer Service Experience</h3>
+            <p class="card-text">Working at Chemist Warehouse has helped me build customer service, communication, teamwork and problem-solving skills.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/markus-winkler-pOu_UmkOG-0-unsplash.JPG"
+                    data-project-title="Magazine Layout"
+                    data-project-description="A layout project demonstrating hierarchy, typography and image placement.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col d-none d-sm-block">
+        <article class="card h-100 portfolio-card">
+          <img src="img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" class="card-img-top" alt="Motion concept thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Communication Skills</h3>
+            <p class="card-text">My pharmacy experience has strengthened my ability to communicate clearly, listen to customers and assist people with different needs.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/dylan-gillis-KdeqA3aTnBY-unsplash.JPG"
+                    data-project-title="Motion Concept"
+                    data-project-description="A motion concept board showing visual direction, pacing and intended mood.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col d-none d-md-block">
+        <article class="card h-100 portfolio-card">
+          <img src="img/unseen-studio-s9CC2SKySJM-unsplash.jpg" class="card-img-top" alt="Video project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Research and Report Writing</h3>
+            <p class="card-text">Through my university assessments, I am developing research, academic writing, critical thinking and referencing skills.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/unseen-studio-s9CC2SKySJM-unsplash.JPG"
+                    data-project-title="Video Storyboard"
+                    data-project-description="A storyboard example showing how image selection can support a video idea.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col d-none d-lg-block">
+        <article class="card h-100 portfolio-card">
+          <img src="img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg" class="card-img-top" alt="Interactive web project thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Criminal and Community Justice</h3>
+            <p class="card-text">I am interested in understanding the legal system, exploring justice processes and learning how communities can be supported.</p>
+            <button type="button" class="btn btn-brand open-lightbox"
+                    data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                    data-project-src="img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.JPG"
+                    data-project-title="Interactive Web"
+                    data-project-description="A web concept demonstrating responsive layout, simple interaction and portfolio presentation.">
+              Open project
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ONE reusable modal -->
+  <div class="modal fade" id="projectLightbox" tabindex="-1"
+       aria-labelledby="projectLightboxLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content project-modal">
+        <div class="modal-header">
+          <h2 class="modal-title" id="projectLightboxLabel">Project title</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/portfolio1.jpg" class="img-fluid modal-project-img"
+               id="modalProjectImage" alt="Selected portfolio project">
+          <p id="modalProjectDescription" class="modal-description">Project description.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCORDION — review from Module 2.3 -->
+  <section class="container section-block" id="services">
+    <div class="section-intro">
+      <p class="eyebrow">Interactive content</p>
+      <h2>Services accordion</h2>
+      <p>Previously learned Bootstrap components can remain useful in a more developed portfolio.</p>
+    </div>
+
+    <div class="accordion services-accordion" id="servicesAccordion">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#serviceOne"
+                  aria-expanded="true" aria-controls="serviceOne">
+            Brand illustration
+          </button>
+        </h3>
+        <div id="serviceOne" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">Illustration systems for campaigns, online identity and storytelling.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#serviceTwo"
+                  aria-expanded="false" aria-controls="serviceTwo">
+            Responsive portfolio design
+          </button>
+        </h3>
+        <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">Simple portfolio pages that adapt across phone, tablet and desktop screens.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#serviceThree"
+                  aria-expanded="false" aria-controls="serviceThree">
+            Creative consultation
+          </button>
+        </h3>
+        <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">Creative direction, feedback review and portfolio refinement.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container section-block d-none d-lg-block" id="process">
+    <div class="section-intro">
+      <p class="eyebrow">Desktop enhancement</p>
+      <h2>Creative process carousel</h2>
+      <p>This component is intentionally reserved for large screens.</p>
+    </div>
+
+    <div id="processCarousel" class="carousel slide process-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/josuanstya-lovdianchel-T_b2jK6gnzs-unsplash.jpg" class="d-block w-100" alt="Creative research slide">
+          <div class="carousel-caption">
+            <h3>Research</h3>
+            <p>Review the audience, brief and examples before designing.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg" class="d-block w-100" alt="Creative production slide">
+          <div class="carousel-caption">
+            <h3>Make</h3>
+            <p>Create drafts, choose strong images and test the layout.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/domenico-loia-hGV2TfOh0ns-unsplash.jpg" class="d-block w-100" alt="Creative testing slide">
+          <div class="carousel-caption">
+            <h3>Refine</h3>
+            <p>Use feedback and validation to improve the final website.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#processCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#processCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM — HTML + basic Bootstrap grid/form classes -->
+  <section class="container section-block" id="contactme">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-5">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact Leah</h2>
+        <p>This demonstration form does not submit to a database.</p>
+        <p class="d-none d-md-block">In your portfolio, use appropriate professional contact details.</p>
+      </div>
+
+      <div class="col-12 col-lg-7">
+        <form class="contact-form">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name">
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Tell me about your project"></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="button" class="btn btn-brand">Demo button only</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+    <p>&copy; 2026 Leah Zeineddine. Professional Portfolio.</p>
+    <p class="social-links">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://behance.net" target="_blank" aria-label="Behance"><i class="bi bi-behance"></i></a>
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap powers collapse, modal, accordion and carousel. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  
+  const themeSwitch = document.querySelector('#themeSwitch');
+  const savedTheme = localStorage.getItem('maggie-theme') || 'light';
+
+  document.documentElement.setAttribute('data-bs-theme', savedTheme);
+
+  if (themeSwitch) {
+    themeSwitch.checked = savedTheme === 'dark';
+
+    themeSwitch.addEventListener('change', function () {
+      const selectedTheme = this.checked ? 'dark' : 'light';
+
+      document.documentElement.setAttribute('data-bs-theme', selectedTheme);
+      localStorage.setItem('maggie-theme', selectedTheme);
+    });
+  }
+
+  
+  const projectButtons = document.querySelectorAll('.open-lightbox');
+  const projectImage = document.querySelector('#modalProjectImage');
+  const projectTitle = document.querySelector('#projectLightboxLabel');
+  const projectDescription = document.querySelector('#modalProjectDescription');
+
+  projectButtons.forEach(function(button) {
+    button.addEventListener('click', function () {
+      projectImage.src = this.dataset.projectSrc;
+      projectImage.alt = this.dataset.projectTitle + ' full image';
+      projectTitle.textContent = this.dataset.projectTitle;
+      projectDescription.textContent = this.dataset.projectDescription;
+    });
+  });
+
+  
+</script>
+
+</body>
+</html>
